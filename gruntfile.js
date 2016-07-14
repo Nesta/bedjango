@@ -34,6 +34,7 @@ module.exports = function(grunt) {
 				files: {
 					'css/main.css': 'src/sass/main.sass',
 					'css/vendors/groundwork.css': 'src/sass/vendors/groundwork.sass',
+          'css/vendors/hover.css': 'src/sass/vendors/hover.sass',
 				}
 			},
 			dev: {
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
 				files: {
 					'css/main.css': 'src/sass/main.sass',
 					'css/vendors/groundwork.css': 'src/sass/vendors/groundwork.sass',
+          'css/vendors/hover.css': 'src/sass/vendors/hover.sass',
 				}
 			}
 		},
