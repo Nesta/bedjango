@@ -2,25 +2,20 @@ footer
   margin-top: 1.5em
   background: $blue
   padding: 5px 0
-  color: $white
-  a
-    background-color: $bluegrey_200
-    padding-top: 100px
-    padding-bottom: 100px
-    text-align: center
-    &:last-child
-      background-color: $bluegrey_400
-      padding-top: 115px
-      padding-bottom: 115px
-      color: $white
-      text-transform: uppercase
-      text-align: center
-  .block-system-powered-by-block
-    img
-      width: 250px
-      float: right
-      margin: 10px 15px
   .region-footer
-    a
-      +gallery(3)
-      +gutters(.01)
+    div
+      display: table
+      float: left
+      width: 25%
+      border-right: 1px solid $white
+      &:last-child
+        border: 0
+        a
+          background-color: $bluegrey_400
+      a
+        text-transform: uppercase
+        display: table-cell
+        background-color: $bluegrey_200
+        color: $white
+        height: 200px
+        text-align: center

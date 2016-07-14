@@ -2,11 +2,16 @@
  * Mixins
  */
 
-@mixin button-bg()
+// Add styles to Buttons
+=button-bg()
   background: $links
   border-radius: 45px
-  height: 68px
-  width: 270px
+  position: relative
+  z-index: 2
+  text-align: center
+  padding: 25px 50px
+  display: block
+  margin: 0 auto
 
 
 // Add padding to container when resolution is smaller than width container defined
