@@ -473,8 +473,16 @@ head:before {
 }
 
 header {
-  background: #2b334a;
   padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #f3f6f7;
+  transition: height 0.3s;
+  height: 100px;
 }
 
 header .site-logo, header .site-name {
@@ -493,6 +501,58 @@ header a {
 
 header a:hover {
   color: #f3f6f7;
+}
+
+header .region {
+  background: #f3f6f7;
+}
+
+header #logo {
+  display: inline-block;
+  float: left;
+  transition: all 0.3s;
+}
+
+header #logo-min {
+  display: none;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+  margin-right: 15%;
+}
+
+header nav ul {
+  margin-top: 30px;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  transition: all 0.3s;
+  font-family: 'Raleway-Bold';
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+header nav ul li:last-child a {
+  color: #d91361;
+}
+
+header.smaller {
+  height: 75px;
 }
 
 .region-primary-menu nav {
@@ -918,19 +978,67 @@ head:hover ~ body .layout-container footer .region-footer:before {
   }
 }
 
+.third-section {
+  margin-top: 1.5em;
+  padding: 5px 0;
+}
+
+.third-section a {
+  background-color: #b0bec5;
+}
+
+.third-section .region-third-section a {
+  width: 23.7288135593%;
+  float: left;
+  margin-right: -105.263157895%;
+}
+
+.third-section .region-third-section a:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.third-section .region-third-section a:nth-child(4n + 2) {
+  margin-left: 25.4237288136%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.third-section .region-third-section a:nth-child(4n + 3) {
+  margin-left: 50.8474576271%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.third-section .region-third-section a:nth-child(4n + 4) {
+  margin-left: 76.2711864407%;
+  margin-right: -100%;
+  clear: none;
+}
+
 footer {
   margin-top: 1.5em;
   background: #2b334a;
   padding: 5px 0;
-  color: white;
+  color: #f3f6f7;
 }
 
 footer a {
-  color: white;
+  background-color: #b0bec5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
-footer a:hover {
-  color: #5d5f65;
+footer a:last-child {
+  background-color: #78909c;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  color: #f3f6f7;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 footer .block-system-powered-by-block img {

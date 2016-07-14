@@ -8,13 +8,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/main.css">
-
-       <!-- <script src="js/custom.js"></script> -->
+        <link rel="stylesheet" href="css/vendors/hover.css">
+        <link rel="stylesheet" href="css/vendors/groundwork.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+        <script src="js/groundwork.all.js"></script>
+        <script src="js/custom.js"></script>
     </head>
     <body>
       <div class="layout-container">
         <header>
-          Header para prueba de concepto para BeDjango.
+          <div class="region">
+            <a id="logo" class="animated" href="/" title="home" rel="home"><img src="logo.png"></a>
+            <a id="logo-min" class="animated" href="/" title="home" rel="home"><img src="logo_min.jpg"></a>
+            <nav>
+              <ul>
+                <li><a href="#" title="work">Work</a></li>
+                <li><a href="#" title="services">Services</a></li>
+                <li><a href="#" title="about">About</a></li>
+                <li><a href="#" title="blog">blog</a></li>
+                <li><a href="#" title="contact">contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </header>
         <main>
           <div class="layout-content">
@@ -44,14 +61,41 @@
                 </div>
                 <a class="secondary-call-to-action" href="/services" title="Django, Python, openedx and open stack development services">About our development services</a>
             </section>
+            <section class="third-section">
+              <div class="region-third-section">
+                <a href="#" class="region">
+                  <img src="images/ico_diamond.png"/>
+                </a>
+                <a href="#" class="region">
+                  <img src="images/ico_bird.png"/>
+                  <h3>Agile Development</h3>
+                </a>
+                <a href="#" class="region">
+                  <img src="images/ico_ribbon.png"/>
+                  <h3>Quality Assurance</h3>
+                </a>
+                <a href="#" class="region">
+                  <img src="images/ico_rocket.png"/>
+                  <h3>Digital Strategy Team</h3>
+                </a>
+              </div>
+            </section>
           </div>
         </main>
         <footer>
           <div class="region-footer">
-            <a href="#" class="region"> twitter</a>
-            <a href="#" class="region"> linkedin</a>
-            <a href="#" class="region"> facebook</a>
-            <a href="#" class="region"> contacto</a>
+            <a href="https://es.linkedin.com/" class="region hvr-sweep-to-top">
+              <img src="images/ico_linkedin.png"/>
+            </a>
+            <a href="https://www.plus.google.com/" class="region hvr-sweep-to-top">
+              <img src="images/ico_gplus.png"/>
+            </a>
+            <a href="https://es.linkedin.com/" class="region hvr-sweep-to-top">
+              <img src="images/ico_twitter.png"/>
+            </a>
+            <a href="#" class="region hvr-sweep-to-top">
+              > contact
+            </a>
           </div>
         </footer>
       </div>
