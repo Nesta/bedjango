@@ -918,6 +918,46 @@ head:hover ~ body .layout-container footer .region-footer:before {
   }
 }
 
+.third-section {
+  margin-top: 1.5em;
+  padding: 5px 0;
+}
+
+.third-section a {
+  background-color: #b0bec5;
+}
+
+.third-section .region-third-section a {
+  width: 23.7288135593%;
+  float: left;
+  margin-right: -105.263157895%;
+}
+
+.third-section .region-third-section a:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.third-section .region-third-section a:nth-child(4n + 2) {
+  margin-left: 25.4237288136%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.third-section .region-third-section a:nth-child(4n + 3) {
+  margin-left: 50.8474576271%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.third-section .region-third-section a:nth-child(4n + 4) {
+  margin-left: 76.2711864407%;
+  margin-right: -100%;
+  clear: none;
+}
+
 footer {
   margin-top: 1.5em;
   background: #2b334a;
