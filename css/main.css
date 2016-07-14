@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Advent+Pro:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 *,
 :before,
 :after {
@@ -431,13 +432,14 @@ h4,
 h5,
 h6 {
   color: #2b334a;
-  font-family: "Advent Pro";
+  font-family: "Raleway";
   font-weight: 600;
 }
 
 h1 {
-  line-height: 0.8;
+  line-height: 84px;
   margin: 0.77em 0;
+  color: #f3f6f7;
 }
 
 p {
