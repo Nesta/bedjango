@@ -495,6 +495,15 @@ header a:hover {
   color: #f3f6f7;
 }
 
+header .region {
+  background: red;
+}
+
+header nav {
+  font-family: 'Raleway-Bold ';
+  color: #333333;
+}
+
 .region-primary-menu nav {
   position: relative;
 }
