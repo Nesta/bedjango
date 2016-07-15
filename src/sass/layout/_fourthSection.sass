@@ -1,0 +1,55 @@
+.fourth-section
+  margin-top: 1.5em
+  padding: 5px 0
+  background-color: $bluegrey_50
+  height: 450px
+  // el height se debe preguntar a diseño si no lo tenemos.
+  padding: 0 20%
+  .owl-carousel
+    position: relative
+    padding: 20% 0
+    // añadid lineheight, las fuentes, tamaños correctos, jugad con el padding top y bottom para dejar el hueco.
+    h2
+
+    cita
+
+    // ...
+
+
+    .owl-prev 
+      position: absolute
+      right: 110%
+      top: 50%
+      background: red
+      // cambiar rojo por una imagen :)
+      text-indent: -9999px
+      width: 100px
+      height: 20px
+    .owl-next
+      position: absolute
+      left: 110%
+      top: 50%
+      background: red 
+      // cambiar rojo por una imagen :)
+      text-indent: -9999px
+      width: 100px
+      height: 20px
+    .owl-dots
+      margin-top: 10px
+      text-align: center
+      -webkit-tap-highlight-color: transparent
+      .owl-dot
+        display: inline-block
+        zoom: 1
+        span
+          width: 60px
+          height: 5px
+          background: green
+          margin: 5px 7px
+          display: block
+          -webkit-backface-visibility: visible
+          transition: opacity 200ms ease
+          border-radius: 30px
+        &.active
+          span
+            background: red

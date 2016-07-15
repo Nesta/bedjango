@@ -1,0 +1,48 @@
+.third-section
+  background: white
+  height: 450px
+  .region div
+    display: table
+    float: left
+    width: 25%
+    border-left: 5px solid green
+    position: relative
+    .image-crop
+      height: 120px
+      display: block
+      overflow: hidden
+      margin-top: 10px
+      position: absolute
+      right: 15px
+      top: 15px
+    .text
+      opacity: 0
+      transition: opacity 0.3s, visibility 0.3s
+    .hvr-sweep-to-right
+      &:before
+        background: url("../logo_min.png") top right no-repeat green
+      &:hover
+        .text
+          z-index: 3
+          position: absolute
+          top: 0 
+          left: 0
+          display: block
+          opacity: 1
+          transition: opacity 0.3s, visibility 0.3s
+    h3
+      width: 55%
+      text-align: left
+      padding-left: 20px
+      position: absolute
+      bottom: 0
+    &:last-child
+      a
+        background-color: $bluegrey_400
+    a
+      text-transform: uppercase
+      display: table-cell
+      background-color: $bluegrey_200
+      color: $white
+      height: 230px
+      text-align: center

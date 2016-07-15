@@ -1,0 +1,22 @@
+/**
+ * Mixins
+ */
+
+// Add styles to Buttons
+=button-bg()
+  background: $links
+  border-radius: 45px
+  position: relative
+  z-index: 2
+  text-align: center
+  padding: 25px 50px
+  display: block
+  margin: 0 auto
+
+
+// Add padding to container when resolution is smaller than width container defined
+=padding-container($container-width, $padding)
+  transition: padding .5s ease-in-out
+  +breakpoint(max-width $container-width + $padding)
+    padding: 0 $padding
+    transition: padding .5s ease-in-out
