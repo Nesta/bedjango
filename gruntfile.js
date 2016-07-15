@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var host = 'http://localhost/';
+  var host = 'http://bedjango.local/';
 
 	require('es6-promise').polyfill();
 
@@ -35,6 +35,7 @@ module.exports = function(grunt) {
 					'css/main.css': 'src/sass/main.sass',
 					'css/vendors/groundwork.css': 'src/sass/vendors/groundwork.sass',
           'css/vendors/hover.css': 'src/sass/vendors/hover.sass',
+          'css/vendors/owl.carousel.css': 'src/sass/vendors/owl.carousel.sass',
 				}
 			},
 			dev: {
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
 					'css/main.css': 'src/sass/main.sass',
 					'css/vendors/groundwork.css': 'src/sass/vendors/groundwork.sass',
           'css/vendors/hover.css': 'src/sass/vendors/hover.sass',
+          'css/vendors/owl.carousel.css': 'src/sass/vendors/owl.carousel.sass',
 				}
 			}
 		},
