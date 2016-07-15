@@ -16,6 +16,7 @@
       margin-bottom: 0.77em
       position: relative
       padding: 0.77em 20% 0 20%
+      font-family: $title
 
     img
       position: absolute
@@ -28,18 +29,30 @@
   +clearfix()
   h2
     text-align: center
+    font-family: $title
 
   .secondary-call-to-action
     +button-bg()
+    width: 270px
 
   .expertises
     +clearfix()
+    height: 340px
 
     .expertise
       +gallery(4)
       background-color: $white
       border-radius: 3px
+      padding: 4%
+      height: 100%
 
-    h3
+      h3
+        font-family: $title
+
+      img
+        padding: 8px
+
+    .green-bar
       border-top: 2px solid
       border-top-color: $django_green
+      width: 64px
