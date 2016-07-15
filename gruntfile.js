@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var host = 'http://bedjango.local/';
+  var host = 'http://localhost/';
 
 	require('es6-promise').polyfill();
 
