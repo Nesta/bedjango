@@ -6,22 +6,29 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/vendors/hover.css">
         <link rel="stylesheet" href="css/vendors/groundwork.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
         <script src="js/groundwork.all.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/carousell.js"></script>
+
     </head>
     <body>
       <div class="layout-container">
         <header>
           <div class="region">
-            <a id="logo" class="animated" href="/" title="home" rel="home"><img src="logo.png"></a>
-            <a id="logo-min" class="animated" href="/" title="home" rel="home"><img src="logo_min.jpg"></a>
+            <a src="logo-bedjango" alt="Bedjango - Python/Django development company. Django experts in London UK, Spain and Switzerland" id="logo" class="animated" href="/" title="home" rel="home"><img src="logo.png"></a>
+            <a src="logo-bedjango" alt="Bedjango - Python/Django development company. Django experts in London UK, Spain and Switzerland" id="logo-min" class="animated" href="/" title="home" rel="home"><img src="logo_min.png"></a>
             <nav>
               <ul>
                 <li><a href="#" title="work">Work</a></li>
@@ -45,39 +52,57 @@
                 <div class="expertises">
                     <div class="expertise">
                       <img src="../images/django_logo.png" alt="Django and Openedx development company" />
+                      <div class="green-bar"></div>
                       <h3>Django web design</h3>
                       <p> Get the web application that fits your needs easily and quickly with Django. </p>
                     </div>
                     <div class="expertise">
                       <img src="../images/edx-openedx-logo.png" alt="Openstack and Django web development experts" />
+                      <div class="green-bar"></div>
                       <h3>OpenEDX development</h3>
                       <p>Assistance to all your Open edX needs with our experience over the platform and Django.</p>
                     </div>
                     <div class="expertise">
                       <img src="../images/openstack_logo.png" alt="Bedjango: Django development and consultancy company in London UK, Spain and Switzerland" />
+                      <div class="green-bar"></div>
                       <h3>Dashboard +APIs</h3>
                       <p>Create, extend and customize your OpenStack cloud services with Django and Horizon.</p>
                     </div>
                 </div>
-                <a class="secondary-call-to-action" href="/services" title="Django, Python, openedx and open stack development services">About our development services</a>
+                <a class="secondary-call-to-action" href="/services" title="Django, Python, openedx and open stack development services">> ABOUT OUR SERVICES</a>
             </section>
             <section class="third-section region">
               <div class="region-third-section">
-                <a href="#">
-                  <img src="images/ico_diamond.png" />
-                </a>
-                <a href="#">
-                  <img src="images/ico_bird.png" />
-                  <h3>Agile Development</h3>
-                </a>
-                <a href="#">
-                  <img src="images/ico_ribbon.png" />
-                  <h3>Quality Assurance</h3>
-                </a>
-                <a href="#">
-                  <img src="images/ico_rocket.png" />
-                  <h3>Digital Strategy Team</h3>
-                </a>
+                <div>
+                  <a href="#" class="region">
+                    <img src="images/ico_diamond.png" />
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="region">
+                    <img src="images/ico_bird.png" />
+                    <h3>Agile Development</h3>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="region">
+                    <img src="images/ico_ribbon.png" />
+                    <h3>Quality Assurance</h3>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="region">
+                    <img src="images/ico_rocket.png" />
+                    <h3>Digital Strategy Team</h3>
+                  </a>
+              </div>
+              </div>
+            </section>
+            <section class="fourth-section region">
+              <div class="fourth-section region">
+                <h2>Python and Django projects well done :)</h2>
+                <cite>"The efficiency, agility management and humanae treatment
+                of BeDjango team are a guarantee of success in carrying out any project. For our porject are, clerly, a great value."</cite>
               </div>
             </section>
           </div>

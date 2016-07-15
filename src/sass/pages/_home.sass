@@ -1,43 +1,58 @@
 .first-block
-  height: 500px
-  position: relative
-  margin-top: 100px
-  .call-to-action
-    +button-bg()
-    width: 270px
-  h1
-    z-index: 2
-    text-align: center
-    font-size: 72px
-    line-height: 84px
-    margin: 0
-    margin-bottom: 0.77em
+  +breakpoint($large)
+    display: block
+    height: 500px
     position: relative
-    padding: 0.77em 20% 0 20%
+    margin-top: 100px
+    .call-to-action
+      +button-bg()
+      width: 270px
+    h1
+      z-index: 2
+      text-align: center
+      font-size: 72px
+      line-height: 84px
+      margin: 0
+      margin-bottom: 0.77em
+      position: relative
+      padding: 0.77em 20% 0 20%
+      font-family: $title
 
-  img
-    position: absolute
-    left: 0px
-    top: 0px
-    width: 100%
-    height: 100%
+    img
+      position: absolute
+      left: 0px
+      top: 0px
+      width: 100%
+      height: 100%
 
 .second-block
   +clearfix()
   h2
     text-align: center
+    font-family: $title
 
   .secondary-call-to-action
     +button-bg()
+    width: 270px
 
   .expertises
     +clearfix()
+    height: 340px
 
     .expertise
       +gallery(4)
       background-color: $white
       border-radius: 3px
+      padding: 4%
+      height: 100%
 
-    h3
+      h3
+        font-family: $title
+
+      img
+        padding: 8px
+
+    .green-bar
       border-top: 2px solid
       border-top-color: $django_green
+      width: 64px
