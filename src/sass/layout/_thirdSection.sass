@@ -1,9 +1,19 @@
 .third-section
   margin-top: 1.5em
+  background: $blue
   padding: 5px 0
-  a
-    background-color: $bluegrey_200
   .region-third-section
-    a
-      +gallery(3)
-      +gutters(.01)
+    div
+      background-color: $bluegrey_50
+      display: table
+      float: left
+      width: 20%
+      margin-right: 20px
+      border-left: 5px solid green
+      &:last-child
+        border: 0
+      a
+        img
+          float: right
+        h3
+          color: $body
