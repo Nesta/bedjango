@@ -442,6 +442,10 @@ h1 {
   color: #f3f6f7;
 }
 
+h2 {
+  font-family: "Raleway";
+}
+
 p {
   line-height: 1.5;
   margin-bottom: 1.5em;
@@ -973,6 +977,16 @@ head:hover ~ body .layout-container main .region:before {
   margin-left: 76.2711864407%;
   margin-right: -100%;
   clear: none;
+}
+
+.fourth-section {
+  margin-top: 1.5em;
+  padding: 5px 0;
+  background-color: #eceff1;
+}
+
+.fourth-section h2 {
+  font-family: "Raleway";
 }
 
 footer {
