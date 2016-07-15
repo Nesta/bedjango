@@ -678,7 +678,7 @@ html {
 
 body {
   color: #5d5f65;
-  background-color: #f3f6f7;
+  background-color: #eceff1;
 }
 
 .border-region .region, .border-region main {
@@ -802,32 +802,32 @@ head:hover ~ body
   }
 }
 
-.layout-container main {
+.layout-container main .region {
   max-width: 91.407%;
   margin-left: auto;
   margin-right: auto;
   transition: padding .5s ease-in-out;
 }
 
-.layout-container main::after {
+.layout-container main .region::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.layout-container main:after {
+.layout-container main .region:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-head:hover ~ .layout-container main,
-head:hover ~ body .layout-container main {
+head:hover ~ .layout-container main .region,
+head:hover ~ body .layout-container main .region {
   position: relative;
 }
 
-head:hover ~ .layout-container main:before,
-head:hover ~ body .layout-container main:before {
+head:hover ~ .layout-container main .region:before,
+head:hover ~ body .layout-container main .region:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -844,7 +844,7 @@ head:hover ~ body .layout-container main:before {
 }
 
 @media (max-width: 102%) {
-  .layout-container main {
+  .layout-container main .region {
     padding: 0 2%;
     transition: padding .5s ease-in-out;
   }
@@ -1022,60 +1022,30 @@ footer {
   margin-top: 1.5em;
   background: #2b334a;
   padding: 5px 0;
-  color: #f3f6f7;
 }
 
-footer a {
-  background-color: #b0bec5;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-}
-
-footer a:last-child {
-  background-color: #78909c;
-  padding-top: 115px;
-  padding-bottom: 115px;
-  color: #f3f6f7;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-footer .block-system-powered-by-block img {
-  width: 250px;
-  float: right;
-  margin: 10px 15px;
-}
-
-footer .region-footer a {
-  width: 23.7288135593%;
+footer .region-footer div {
+  display: table;
   float: left;
-  margin-right: -105.263157895%;
+  width: 25%;
+  border-right: 1px solid #f3f6f7;
 }
 
-footer .region-footer a:nth-child(4n + 1) {
-  margin-left: 0;
-  margin-right: -100%;
-  clear: both;
-  margin-left: 0;
+footer .region-footer div:last-child {
+  border: 0;
 }
 
-footer .region-footer a:nth-child(4n + 2) {
-  margin-left: 25.4237288136%;
-  margin-right: -100%;
-  clear: none;
+footer .region-footer div:last-child a {
+  background-color: #78909c;
 }
 
-footer .region-footer a:nth-child(4n + 3) {
-  margin-left: 50.8474576271%;
-  margin-right: -100%;
-  clear: none;
-}
-
-footer .region-footer a:nth-child(4n + 4) {
-  margin-left: 76.2711864407%;
-  margin-right: -100%;
-  clear: none;
+footer .region-footer div a {
+  text-transform: uppercase;
+  display: table-cell;
+  background-color: #b0bec5;
+  color: #f3f6f7;
+  height: 200px;
+  text-align: center;
 }
 
 .flex-boxes {
@@ -1150,35 +1120,47 @@ footer .region-footer a:nth-child(4n + 4) {
   }
 }
 
+.first-block {
+  height: 500px;
+  position: relative;
+  margin-top: 100px;
+}
+
 .first-block .call-to-action {
   background: #d91361;
   border-radius: 45px;
-  height: 68px;
-  width: 270px;
+  position: relative;
   z-index: 2;
-  position: absolute;
-  bottom: 72px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  padding-top: 22px;
+  padding: 25px 50px;
+  display: block;
+  margin: 0 auto;
+  width: 270px;
 }
 
 .first-block h1 {
   z-index: 2;
-  position: absolute;
   text-align: center;
   font-size: 72px;
   line-height: 84px;
+  margin: 0;
+  margin-bottom: 0.77em;
+  position: relative;
+  padding: 0.77em 20% 0 20%;
 }
 
 .first-block img {
   position: absolute;
   left: 0px;
-  right: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
+}
+
+.second-block::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .second-block h2 {
@@ -1188,12 +1170,18 @@ footer .region-footer a:nth-child(4n + 4) {
 .second-block .secondary-call-to-action {
   background: #d91361;
   border-radius: 45px;
-  height: 68px;
-  width: 270px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 25px 50px;
+  display: block;
+  margin: 0 auto;
 }
 
-.second-block .expertises {
-  overflow: hidden;
+.second-block .expertises::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .second-block .expertises .expertise {
@@ -1225,10 +1213,6 @@ footer .region-footer a:nth-child(4n + 4) {
 .second-block .expertises h3 {
   border-top: 2px solid;
   border-top-color: #29a157;
-}
-
-body {
-  background-color: #eceff1;
 }
 
 .node__links {
