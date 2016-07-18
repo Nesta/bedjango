@@ -80,3 +80,89 @@
       border-top: 2px solid
       border-top-color: $django_green
       width: 64px
+
+.five-section
+  padding-bottom: 3.5em
+  background: $bluegrey_100
+
+  h2
+    text-align: center
+    font-family: $title
+    font-weight: 900
+    font-size: 50px
+    padding-top: 100px
+
+  .masonry
+    margin-bottom: 3em
+
+  .masonry__column
+    width: span(4)
+
+  .masonry__gutter
+    width: gutter()
+
+  .masonry__item
+    width: span(4)
+    margin-top: gutter(5)
+    background-color: white
+    height: 100%
+
+    .date
+      height: 5%
+      font-family: $expertise-text
+      font-size: 14px
+      opacity: 0.6
+
+      p
+        padding: 30px
+
+    .title
+      margin-top: -80px
+      height: 75%
+      padding: 30px
+
+      h3
+        font-family: $title
+        font-weight: 900
+        font-size: 28px
+
+
+    .tags
+      height: 20%
+      background-color: $bluegrey_50
+      max-height: 50px
+      display: table
+      padding-left: 33px
+      width: 100.076%
+      //weird display table error
+
+      .tagline
+        vertical-align: middle
+
+        strong
+          font-weight: 600
+          font-family: $title
+          font-size: 14px
+          color: $links
+          text-transform: uppercase
+
+
+
+  .masonry__item
+    &:nth-child(3n+1)
+      height: auto
+
+    &:nth-child(3n+2)
+      height: auto
+
+    &:nth-child(3n+3)
+      height: auto
+
+  .call-to-action
+    +button-bg()
+    width: 270px
+    font-weight: 600
+    font-size: 15px
+    padding: 20px
+    margin-top: 25px
+    margin-bottom: 40px
