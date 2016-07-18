@@ -7,6 +7,9 @@
     .call-to-action
       +button-bg()
       width: 270px
+      font-weight: 600
+      font-size: 18px
+
     h1
       z-index: 2
       text-align: center
@@ -17,6 +20,7 @@
       position: relative
       padding: 0.77em 20% 0 20%
       font-family: $title
+      font-weight: 900
 
     img
       position: absolute
@@ -30,14 +34,21 @@
   h2
     text-align: center
     font-family: $title
+    font-weight: 900
+    font-size: 52px
 
   .secondary-call-to-action
     +button-bg()
     width: 270px
+    font-weight: 600
+    font-size: 15px
+    padding: 20px
+    margin-top: 25px
+    margin-bottom: 50px
 
   .expertises
     +clearfix()
-    height: 340px
+    height: 400px
 
     .expertise
       +gallery(4)
@@ -48,9 +59,21 @@
 
       h3
         font-family: $title
+        font-weight: 600
+        font-size: 2em
+        opacity: 0.8
+        width: 60%
+        margin-bottom: -3px
 
-      img
-        padding: 8px
+      p
+        width: 83%
+
+
+    .expertise-image
+      height: 40%
+
+    .expertise-text
+      height: 60%
 
     .green-bar
       //se podria hacer con un :before al title, pero esta tambien bien asi :)
