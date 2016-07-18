@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Advent+Pro:400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 *,
 :before,
@@ -556,7 +556,7 @@ header nav ul li a {
   color: #333333;
   text-transform: uppercase;
   font-size: 1.125em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 header nav ul li a:hover {
@@ -1013,7 +1013,6 @@ head:hover ~ body .layout-container main .region:before {
   margin-top: 1.5em;
   padding: 5px 0;
   background-color: #eceff1;
-  height: 450px;
   padding: 0 20%;
 }
 
@@ -1022,24 +1021,90 @@ head:hover ~ body .layout-container main .region:before {
   padding: 20% 0;
 }
 
+.fourth-section .owl-carousel h2 {
+  font-family: "Raleway";
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.fourth-section .owl-carousel p {
+  line-height: 48px;
+  font-size: 30px;
+  font-family: "Raleway";
+  font-weight: lighter;
+  opacity: 0.80;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.fourth-section .owl-carousel h3 {
+  font-family: "Raleway";
+  color: #29A156;
+}
+
+.fourth-section .owl-carousel .owl-item img {
+  height: 60px;
+  width: 60px;
+  float: left;
+  border-radius: 150px;
+}
+
+.fourth-section .owl-carousel .testimonial .quota {
+  border-radius: 0px;
+  height: 18px;
+  width: 29px;
+  margin-left: 85px;
+  margin-top: 12px;
+}
+
+.fourth-section .owl-carousel .testimonial-wrapper {
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.fourth-section .owl-carousel .testimonial-logo {
+  float: left;
+  margin-right: 15px;
+}
+
+.fourth-section .owl-carousel .testimonial-client h3 {
+  margin: 0px;
+}
+
+.fourth-section .owl-carousel .testimonial-client p {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  opacity: 1.0;
+  padding: 0px;
+}
+
+.fourth-section .owl-carousel .testimonial-title {
+  margin: 0px;
+}
+
 .fourth-section .owl-carousel .owl-prev {
   position: absolute;
-  right: 110%;
+  right: 120%;
   top: 50%;
-  background: red;
+  background: url("../images/arrow_left.png");
+  background-repeat: no-repeat;
   text-indent: -9999px;
-  width: 100px;
-  height: 20px;
+  width: 30px;
+  height: 18px;
 }
 
 .fourth-section .owl-carousel .owl-next {
   position: absolute;
-  left: 110%;
+  left: 120%;
   top: 50%;
-  background: red;
+  background: url("../images/arrow_right.png");
+  background-repeat: no-repeat;
   text-indent: -9999px;
-  width: 100px;
-  height: 20px;
+  width: 30px;
+  height: 18px;
 }
 
 .fourth-section .owl-carousel .owl-dots {
@@ -1054,18 +1119,20 @@ head:hover ~ body .layout-container main .region:before {
 }
 
 .fourth-section .owl-carousel .owl-dots .owl-dot span {
-  width: 60px;
-  height: 5px;
-  background: green;
+  width: 30px;
+  height: 2px;
+  background: #333333;
   margin: 5px 7px;
   display: block;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
+  opacity: 0.60;
 }
 
 .fourth-section .owl-carousel .owl-dots .owl-dot.active span {
-  background: red;
+  background: #333333;
+  opacity: 1.00;
 }
 
 .five-section {
@@ -1114,6 +1181,7 @@ head:hover ~ body .layout-container main .region:before {
   padding: 25px 50px;
   display: block;
   margin: 0 auto;
+  font-family: "Raleway";
   width: 300px;
 }
 
@@ -1229,7 +1297,10 @@ footer .region-footer div a {
     padding: 25px 50px;
     display: block;
     margin: 0 auto;
+    font-family: "Raleway";
     width: 270px;
+    font-weight: 600;
+    font-size: 18px;
   }
   .first-block h1 {
     z-index: 2;
@@ -1241,6 +1312,7 @@ footer .region-footer div a {
     position: relative;
     padding: 0.77em 20% 0 20%;
     font-family: "Raleway";
+    font-weight: 900;
   }
   .first-block img {
     position: absolute;
@@ -1260,6 +1332,8 @@ footer .region-footer div a {
 .second-block h2 {
   text-align: center;
   font-family: "Raleway";
+  font-weight: 900;
+  font-size: 52px;
 }
 
 .second-block .secondary-call-to-action {
@@ -1271,11 +1345,17 @@ footer .region-footer div a {
   padding: 25px 50px;
   display: block;
   margin: 0 auto;
+  font-family: "Raleway";
   width: 270px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .second-block .expertises {
-  height: 340px;
+  height: 400px;
 }
 
 .second-block .expertises::after {
@@ -1314,10 +1394,23 @@ footer .region-footer div a {
 
 .second-block .expertises .expertise h3 {
   font-family: "Raleway";
+  font-weight: 600;
+  font-size: 2em;
+  opacity: 0.8;
+  width: 60%;
+  margin-bottom: -3px;
 }
 
-.second-block .expertises .expertise img {
-  padding: 8px;
+.second-block .expertises .expertise p {
+  width: 83%;
+}
+
+.second-block .expertises .expertise-image {
+  height: 40%;
+}
+
+.second-block .expertises .expertise-text {
+  height: 60%;
 }
 
 .second-block .expertises .green-bar {
