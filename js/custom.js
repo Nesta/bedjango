@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
           header = document.querySelector("header");
       if (distanceY > shrinkOn) {
           classie.add(header,"smaller");
+          $('.active').css({"padding-bottom" : "14px"})
           $('#logo').hide();
           $('#logo-min').show();
       } else {
@@ -12,6 +13,7 @@ jQuery(document).ready(function($) {
               classie.remove(header,"smaller");
               $('#logo-min').hide();
               $('#logo').show();
+              $('.active').css({"padding-bottom" : "39px"})
           }
       }
   });
